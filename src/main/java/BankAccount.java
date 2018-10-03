@@ -39,6 +39,19 @@ public class BankAccount {
     private double interestEarned;
 
     /**
+     * @return dsfasdfasd.
+     */
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    /**
+     * @param number thisdfiasldjfoas.
+     */
+    public void setAccountBalance(final int number) {
+        accountBalance = number;
+    }
+    /**
      * @param name sdfasdfa.
      * @param accountCategory sdfasdfasf.
      */
