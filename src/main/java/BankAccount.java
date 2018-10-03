@@ -25,6 +25,8 @@ public class BankAccount {
         WORKPLACE,
     }
 
+    /** adfsda. */
+    private static int total = 0;
     /** sdafads. */
     private int accountNumber;
     /** sdfasdf. */
@@ -58,6 +60,9 @@ public class BankAccount {
     public void setOwnerName(final String name) {
         ownerName = name;
     }
+    public static int getTotal() {
+        return total;
+    }
     /**
      * @param name sdfasdfa.
      * @param accountCategory sdfasdfasf.
@@ -65,6 +70,7 @@ public class BankAccount {
     public BankAccount(final String name, final BankAccountType accountCategory) {
         ownerName = name;
         accountType = accountCategory;
+        total++;
     }
     /*
      * Implement getters and setters as appropriate for private variables.

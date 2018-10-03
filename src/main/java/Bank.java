@@ -87,17 +87,13 @@ public class Bank {
     public void changeOwnerName(final BankAccount bankAccount, final String name) {
         bankAccount.setOwnerName(name);
     }
-
-    public static int totalAccounts = 0;
     /**
      * Uses static variable to get number of bank accounts opened.
      *
      * @return the total number of accounts
      */
     public static int getNumberOfAccount() {
-        /*
-         * Implement this function
-         */
+        return BankAccount.getTotal();
     }
 
     /**
@@ -120,16 +116,22 @@ public class Bank {
 
         // Deposit money to both accounts and print new balance
         bank.depositMoney(account1, 1000.0);
+        System.out.println("account 1 balance: " + account1.getAccountBalance());
         bank.depositMoney(account2, 5000.0);
+        System.out.println("account 2 balance: " + account2.getAccountBalance());
 
         // Withdraw money from Account 2 and print new balance
         bank.withdrawMoney(account2, 200.0);
+        System.out.println("account 2 balance: " + account2.getAccountBalance());
 
         // Transfer money from Account 2 to Account 1 and print new balances
         bank.transferMoney(account2, account1, 350.0);
+        System.out.println("account 2 balance: " + account2.getAccountBalance());
+        System.out.println("account 1 balance: " + account1.getAccountBalance());
+
 
         // Print number of accounts
         System.out.print("Number of active accounts at " + bank.bankName + " are ");
-        System.out.println(Bank.totalAccounts);
+        System.out.println(Bank.getNumberOfAccount());
     }
 }
