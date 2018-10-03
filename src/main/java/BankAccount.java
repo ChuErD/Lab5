@@ -51,6 +51,10 @@ public class BankAccount {
     public void setAccountBalance(final double number) {
         accountBalance = number;
     }
+
+    /**
+     * @param name dfasdfas.
+     */
     public void setOwnerName(final String name) {
         ownerName = name;
     }
