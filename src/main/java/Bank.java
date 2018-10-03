@@ -29,9 +29,13 @@ public class Bank {
      * @return boolean
      */
     public boolean withdrawMoney(final BankAccount bankAccount, final double amount) {
-        /*
-         * Implement this function
-         */
+        if (bankAccount.getAccountBalance() - amount < 0.0) {
+            return false;
+        } else {
+            double temp = bankAccount.getAccountBalance() - amount;
+            bankAccount.setAccountBalance(temp);
+            return true;
+        }
     }
 
     /**
@@ -45,9 +49,9 @@ public class Bank {
      * @return boolean
      */
     public boolean depositMoney(final BankAccount bankAccount, final double amount) {
-        /*
-         * Implement this function
-         */
+        double temp = bankAccount.getAccountBalance() + amount;
+        bankAccount.setAccountBalance(temp);
+        return true;
     }
 
     /**
@@ -64,9 +68,13 @@ public class Bank {
 
     public boolean transferMoney(final BankAccount source, final BankAccount destination,
             final double amount) {
-        /*
-         * Implement this function
-         */
+        if (source.getAccountBalance() - amount < 0.0) {
+            return false;
+        } else {
+            source.setAccountBalance(source.getAccountBalance() - amount);
+            destination.setAccountBalance(destination.getAccountBalance() + amount);
+            return true;
+        }
     }
 
     /**

@@ -48,8 +48,11 @@ public class BankAccount {
     /**
      * @param number thisdfiasldjfoas.
      */
-    public void setAccountBalance(final int number) {
+    public void setAccountBalance(final double number) {
         accountBalance = number;
+    }
+    public void setOwnerName(final String name) {
+        ownerName = name;
     }
     /**
      * @param name sdfasdfa.
