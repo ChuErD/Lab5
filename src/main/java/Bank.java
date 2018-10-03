@@ -7,10 +7,13 @@
  *
  * @see <a href="https://cs125.cs.illinois.edu/lab/5/">Lab 5 Description</a>
  */
+
+/** this is a dope class called Bank. */
 public class Bank {
+    /** fasdf. */
+    private String bankName;
 
-    public String bankName;
-
+    /** sdfasdf. */
     public Bank() {
         bankName = "Illini Bank";
     }

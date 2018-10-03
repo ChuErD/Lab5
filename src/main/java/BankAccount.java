@@ -1,4 +1,4 @@
-import java.util.Random;
+//import java.util.Random;
 
 /**
  * Class implementing a bank account.
@@ -12,26 +12,40 @@ public class BankAccount {
     /*
      * You may want to use this to distinguish between different kinds of accounts.
      */
+
+    /** what the heck is a enum? */
     public enum BankAccountType {
+        /** sdfasd. */
         CHECKINGS,
+        /** sdfsad. */
         SAVINGS,
+        /** sdfasdf. */
         STUDENT,
-        WORKPLACE
+        /** dsfadsf. */
+        WORKPLACE,
     }
 
+    /** sdafads. */
     private int accountNumber;
-    public BankAccountType accountType;
+    /** sdfasdf. */
+    private BankAccountType accountType;
+    /** sdfasdf. */
     private double accountBalance;
+    /** sdfasdf. */
     private String ownerName;
-    public double interestRate;
+    /** sadfsdaffs. */
+    private double interestRate;
+    /** sdafsdfa. */
     private double interestEarned;
 
+    /**
+     * @param name sdfasdfa.
+     * @param accountCategory sdfasdfasf.
+     */
     public BankAccount(final String name, final BankAccountType accountCategory) {
-        /*
-         * Implement this function
-         */
+        ownerName = name;
+        accountType = accountCategory;
     }
-
     /*
      * Implement getters and setters as appropriate for private variables.
      */
