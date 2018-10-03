@@ -18,6 +18,15 @@ public class Bank {
         bankName = "Illini Bank";
     }
 
+    /** sdfasd. */
+    public static final double ONE_THOUSAND = 1000.0;
+    /** sdfasd. */
+    public static final double FIVE_THOUSAND = 5000.0;
+    /** sdfasd. */
+    public static final double TWO_HUNDRED = 200.0;
+    /** sdfasd. */
+    public static final double THREE_FIFTY = 350.0;
+
     /**
      * Withdraw money from an account.
      * <p>
@@ -115,17 +124,17 @@ public class Bank {
         System.out.println("Bank account for Johy Ive created\n\n");
 
         // Deposit money to both accounts and print new balance
-        bank.depositMoney(account1, 1000.0);
+        bank.depositMoney(account1, ONE_THOUSAND);
         System.out.println("account 1 balance: " + account1.getAccountBalance());
-        bank.depositMoney(account2, 5000.0);
+        bank.depositMoney(account2, FIVE_THOUSAND);
         System.out.println("account 2 balance: " + account2.getAccountBalance());
 
         // Withdraw money from Account 2 and print new balance
-        bank.withdrawMoney(account2, 200.0);
+        bank.withdrawMoney(account2, TWO_HUNDRED);
         System.out.println("account 2 balance: " + account2.getAccountBalance());
 
         // Transfer money from Account 2 to Account 1 and print new balances
-        bank.transferMoney(account2, account1, 350.0);
+        bank.transferMoney(account2, account1, THREE_FIFTY);
         System.out.println("account 2 balance: " + account2.getAccountBalance());
         System.out.println("account 1 balance: " + account1.getAccountBalance());
 

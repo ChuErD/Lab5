@@ -60,6 +60,10 @@ public class BankAccount {
     public void setOwnerName(final String name) {
         ownerName = name;
     }
+
+    /**
+     * @return sdfasdf.
+     */
     public static int getTotal() {
         return total;
     }
